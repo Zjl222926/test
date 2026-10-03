@@ -1,0 +1,9 @@
+name: borneo-dz-repro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+      - -r requirements-exact.txt
+

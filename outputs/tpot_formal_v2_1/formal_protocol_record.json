@@ -1,0 +1,53 @@
+{
+  "protocol_id": "TPOT_FORMAL_V2.1_2026-09-29",
+  "python": "3.13.6",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.4.6",
+  "pandas": "3.0.3",
+  "scikit_learn": "1.6.1",
+  "tpot": "1.1.0",
+  "population_size": 2,
+  "generations": 1,
+  "search_space": "linear",
+  "optimization_metric": "balanced_accuracy",
+  "max_time_mins": null,
+  "max_eval_time_mins": 1.0,
+  "n_jobs": 1,
+  "processes": false,
+  "preprocessing": false,
+  "validation_strategy": "none",
+  "class_or_sample_weights": "not supported by TPOTClassifier.fit in TPOT 1.1.0; limitation recorded",
+  "target_used_for_search_or_selection": false,
+  "seeds": [
+    999101
+  ],
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "outer_group": "frozen cv_group (DOI/study)",
+  "outer_performance_reporting": "one 117-sample OOF result per seed; report mean and SD across five predeclared seeds",
+  "final_full_data_searches": "one search per seed; select using training-only grouped CV rule",
+  "training_rows": 117,
+  "model_index_sha256": "69fb5c8406a7d55cac15174031e21e9306fe76982e3147dbdc2692cd1ddc4452",
+  "KDE_feature_sha256": "1c90e9993ab22fb28b5cd23fe0b22e9e0e9d47a364a195d46b70169bfa65accb",
+  "command_line": [
+    "outputs/Borneo_TPOT_FORMAL_V2_PATCH_2026-09-29/src/run_tpot_formal_v2.py",
+    "--mode",
+    "outer",
+    "--seeds",
+    "999101",
+    "--folds",
+    "0",
+    "--population",
+    "2",
+    "--generations",
+    "1",
+    "--n-jobs",
+    "1",
+    "--max-eval-minutes",
+    "1"
+  ]
+}

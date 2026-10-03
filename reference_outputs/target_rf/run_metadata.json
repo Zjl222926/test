@@ -1,0 +1,32 @@
+{
+  "training_rows": 117,
+  "training_class_counts": {
+    "E2": 53,
+    "E3": 34,
+    "E1": 30
+  },
+  "target_samples": 140,
+  "target_source_grains": 14838,
+  "target_model_grains": 14837,
+  "training_sample_overlap_count": 10,
+  "training_study_overlap_count": 27,
+  "low_n_count": 1,
+  "depositional_age_unspecified_count": 3,
+  "target_source_sha256": "ee1c2c407f848be5c7f666055fe864434ddb6d79641a065555a0b0236f48461e",
+  "training_model_index_sha256": "69fb5c8406a7d55cac15174031e21e9306fe76982e3147dbdc2692cd1ddc4452",
+  "training_KDE_sha256": "1c90e9993ab22fb28b5cd23fe0b22e9e0e9d47a364a195d46b70169bfa65accb",
+  "training_age_arrays_sha256": "4fb4594e22a8ff78747f5e3736ddbf18abc91e64d61eb4d7ade6485e31b2c02c",
+  "model_joblib_sha256": "3882e810087b5bf49395e6236a971593159574be30b1d59b6181cb6ef4c3f425",
+  "RF_params": {
+    "n_estimators": 500,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "class_weight": "balanced_subsample",
+    "random_state": 20260920,
+    "n_jobs": 2
+  },
+  "probabilities_calibrated": false,
+  "target_used_for_fitting_or_parameter_selection": false,
+  "traditional_reference_weighting": "equal weight per training sample within E class",
+  "source_database_modified": false
+}

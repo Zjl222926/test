@@ -1,0 +1,8 @@
+{
+  "protocol_id": "TPOT_FORMAL_V2_2026-09-29",
+  "selected_seed": 999001,
+  "selection_rule": "highest training-only grouped balanced accuracy; then macro-F1; then shorter repr; then lower seed",
+  "target_used_for_selection": false,
+  "selection_grouped_balanced_accuracy": 0.3333333333333333,
+  "selection_grouped_macro_f1": 0.20784313725490197
+}

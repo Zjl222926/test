@@ -1,0 +1,21 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+
+# --- Run products (frozen formal results under outputs/tpot_formal_v2* stay tracked) ---
+logs/
+outputs/method_comparison_cpu/
+outputs/target_rf/
+outputs/target_multimethod/
+outputs/open_world_affinity/
+outputs/gpu_sensitivity/
+outputs/rebuilt_training/
+outputs/reproduction_verification.json
+
+# --- OS / editor noise ---
+Thumbs.db
+.DS_Store
+*.swp

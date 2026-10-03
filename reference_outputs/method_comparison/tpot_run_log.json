@@ -1,0 +1,55 @@
+{
+  "completed_folds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "descriptors": [
+    {
+      "fold": 0,
+      "elapsed_seconds": 75.75499890002538,
+      "search_minutes_cap": 2.0,
+      "population_size": 12,
+      "generations_cap": 2,
+      "inner_cv": "precomputed StratifiedGroupKFold(3) by DOI/study within outer training fold",
+      "inner_train_test_groups_disjoint": true,
+      "pipeline_repr": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('selectfwe', SelectFwe(alpha=0.0030320892422)),\n                ('featureunion-1',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('featureunion-2',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('sgdclassifier',\n                 SGDClassifier(alpha=4.60801815e-05, class_weight='balanced',\n                               eta0=0.183142172636, fit_intercept=np.True_,\n                               l1_ratio=0.504911374881,\n                               learning_rate=np.str_('optimal'),\n                               loss=np.str_('modified_huber'), n_jobs=1,\n                               penalty='elasticnet', random_state=20260920))])",
+      "scoring": "balanced_accuracy"
+    },
+    {
+      "fold": 1,
+      "elapsed_seconds": 18.516891300008865,
+      "search_minutes_cap": 2.0,
+      "population_size": 12,
+      "generations_cap": 2,
+      "inner_cv": "precomputed StratifiedGroupKFold(3) by DOI/study within outer training fold",
+      "inner_train_test_groups_disjoint": true,
+      "pipeline_repr": "Pipeline(steps=[('robustscaler',\n                 RobustScaler(quantile_range=(0.2811072245995,\n                                              0.8122024245417))),\n                ('rfe',\n                 RFE(estimator=ExtraTreesClassifier(bootstrap=np.False_,\n                                                    criterion=np.str_('gini'),\n                                                    max_features=0.779821657812,\n                                                    min_samples_leaf=15,\n                                                    min_samples_split=20,\n                                                    n_jobs=1,\n                                                    random_state=20260921),\n                     step=0.8306348739109)),\n                ('featureunion-1',\n                 FeatureUnion(transformer...\n                                                 FeatureUnion(transformer_list=[('zerocount',\n                                                                                 ZeroCount())])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('featureunion-2',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('lgbmclassifier',\n                 LGBMClassifier(boosting_type=np.str_('dart'),\n                                class_weight='balanced', max_depth=3,\n                                n_estimators=50, n_jobs=1, num_leaves=215,\n                                random_state=20260921, verbose=-1))])",
+      "scoring": "balanced_accuracy"
+    },
+    {
+      "fold": 2,
+      "elapsed_seconds": 37.096587000007275,
+      "search_minutes_cap": 2.0,
+      "population_size": 12,
+      "generations_cap": 2,
+      "inner_cv": "precomputed StratifiedGroupKFold(3) by DOI/study within outer training fold",
+      "inner_train_test_groups_disjoint": true,
+      "pipeline_repr": "Pipeline(steps=[('passthrough-1', Passthrough()),\n                ('passthrough-2', Passthrough()),\n                ('featureunion-1',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('featureunion-2',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('extratreesclassifier',\n                 ExtraTreesClassifier(bootstrap=np.False_,\n                                      class_weight='balanced',\n                                      criterion=np.str_('gini'),\n                                      max_features=0.4457789876991,\n                                      min_samples_leaf=20, min_samples_split=3,\n                                      n_jobs=1, random_state=20260922))])",
+      "scoring": "balanced_accuracy"
+    },
+    {
+      "fold": 3,
+      "elapsed_seconds": 15.98127889999887,
+      "search_minutes_cap": 2.0,
+      "population_size": 12,
+      "generations_cap": 2,
+      "inner_cv": "precomputed StratifiedGroupKFold(3) by DOI/study within outer training fold",
+      "inner_train_test_groups_disjoint": true,
+      "pipeline_repr": "Pipeline(steps=[('maxabsscaler', MaxAbsScaler()),\n                ('variancethreshold',\n                 VarianceThreshold(threshold=0.0333073039748)),\n                ('featureunion-1',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('featureunion-2',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('lgbmclassifier',\n                 LGBMClassifier(boosting_type=np.str_('gbdt'),\n                                class_weight='balanced', max_depth=2,\n                                n_estimators=42, n_jobs=1, num_leaves=177,\n                                random_state=20260923, verbose=-1))])",
+      "scoring": "balanced_accuracy"
+    }
+  ],
+  "errors": []
+}
