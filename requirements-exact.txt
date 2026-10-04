@@ -7,4 +7,7 @@ lightgbm==4.7.0
 tpot==1.1.0
 joblib==1.5.3
 openpyxl==3.1.5
+# setuptools >=81 no longer ships pkg_resources, which stopit (a TPOT
+# dependency) imports at module load; pin a version that still has it.
+setuptools<81
 
